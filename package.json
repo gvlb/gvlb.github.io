@@ -14,7 +14,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/free-brands-svg-icons": "^5.15.2",
+    "@fortawesome/free-solid-svg-icons": "^5.15.2",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "gatsby": "^2.26.1",
+    "gatsby-plugin-fontawesome-css": "^1.0.0",
     "gatsby-plugin-postcss": "^3.7.0",
     "postcss": "^8.2.6",
     "react": "^16.12.0",
