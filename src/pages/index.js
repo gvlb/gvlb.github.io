@@ -1,4 +1,5 @@
 import React from "react"
+import Helmet from "react-helmet"
 import Project from "../components/Project"
 
 import dezoneicon from '../images/dezone.svg'
@@ -8,6 +9,11 @@ import { faBook } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
   return <div className="py-5 px-5 md:px-10 font-mono font-normal text-gray-800">
+    <Helmet title="Giorgio Valbonesi">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="description" property="og:description" content="Giorgio Valbonesi's portofolio website" />
+    </Helmet>
     <header className="flex flex-row">
       <div className="flex flex-col">
         <a className="pt-1" href="https://github.com/ovalb">
