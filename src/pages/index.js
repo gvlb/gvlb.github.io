@@ -8,9 +8,9 @@ import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faBook } from '@fortawesome/free-solid-svg-icons'
 
 export default function Home() {
-  return <div className="py-5 px-5 md:px-10 font-mono font-normal text-gray-800">
+  return <div className="py-5 px-5 md:px-10 font-mono font-normal text-gray-800 dark:bg-gray-900 dark:text-gray-300 h-screen">
     <Helmet title="Giorgio Valbonesi">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />s
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" property="og:description" content="Giorgio Valbonesi's portofolio website" />
     </Helmet>
@@ -25,7 +25,7 @@ export default function Home() {
       </div>
       <div className="flex flex-col px-5 md:px-9">
         <h1 className="font-semibold md:text-xl"> Giorgio Valbonesi</h1>
-        <h1 className="font-normal text-gray-600 text-sm md:text-base">ovalb</h1>
+        <h1 className="font-normal text-gray-600 dark:text-gray-400 text-sm md:text-base">ovalb</h1>
       </div>
     </header>
     <main>
