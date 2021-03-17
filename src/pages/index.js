@@ -4,8 +4,7 @@ import Project from "../components/Project"
 
 import dezoneicon from '../images/dezone.svg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithubAlt, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
-import { faBook } from '@fortawesome/free-solid-svg-icons'
+import { faGithubAlt, faLinkedinIn, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
 
 export default function Home() {
   return <div className="py-5 px-5 md:px-10 font-mono font-normal text-gray-800 dark:bg-gray-900 dark:text-gray-300 h-screen">
@@ -14,23 +13,23 @@ export default function Home() {
       <meta name="viewport" content="width=device-width, initial-scale=1" />
       <meta name="description" property="og:description" content="Giorgio Valbonesi's portofolio website" />
     </Helmet>
-    <header className="flex flex-row">
+    <header className="flex flex-col md:px-12">
+    <div className="flex flex-row">
+      <a className="px-2" href="https://github.com/ovalb">
+        <FontAwesomeIcon icon={faGithubAlt} size="md" /></a>
+      <a className="px-2" href="https://www.linkedin.com/in/giorgiovalbonesi/">
+        <FontAwesomeIcon icon={faLinkedinIn} size="md" /></a>
+      <a className="px-2" href="https://stackoverflow.com/users/4354167/onval">
+        <FontAwesomeIcon icon={faStackOverflow} size="md" /></a>
+    </div>
       <div className="flex flex-col">
-        <a className="pt-1" href="https://github.com/ovalb">
-          <FontAwesomeIcon icon={faGithubAlt} size="lg" /></a>
-        <a className="pt-2" href="https://www.linkedin.com/in/giorgiovalbonesi/">
-          <FontAwesomeIcon icon={faLinkedinIn} size="lg" /></a>
-        <a className="pt-2" href="">
-          <FontAwesomeIcon icon={faBook} size="lg" /></a>
-      </div>
-      <div className="flex flex-col px-5 md:px-9">
         <h1 className="font-semibold md:text-xl"> Giorgio Valbonesi</h1>
         <h1 className="font-normal text-gray-600 dark:text-gray-400 text-sm md:text-base">ovalb</h1>
       </div>
     </header>
     <main>
-    <section className="pt-5 md:pt-0 md:px-12 text-sm md:text-base">
-      <h2 className="font-semibold">About me </h2>
+    <section className="md:pt-0 md:px-12 text-sm md:text-base">
+      <h2 className="font-semibold pt-5">About me </h2>
       <p>Hi, I'm a software developer who <b>loves</b> to build and use great products.</p>
       {/* great = simple */}
       <p className="pt-4">Albeit my main focus is the engineering side of things (design, implementation, testing), I greatly value honing other necessary skills, especially UI/UX and marketing.</p>
@@ -42,7 +41,7 @@ export default function Home() {
     </section>
 
     <section className="py-5 md:px-12">
-      <h2 className="font-semibold text-sm md:text-base">Latest projects</h2>
+      <h2 className="font-semibold text-sm md:text-base">Notable projects</h2>
       <Project name="Dezone"
               desc="all-in-one macOS timer app" 
               img={dezoneicon}
