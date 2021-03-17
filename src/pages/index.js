@@ -29,9 +29,16 @@ export default function Home() {
       </div>
     </header>
     <main>
-    <section className="pt-5 md:pt-0 md:px-12">
-      <h2 className="font-semibold text-sm md:text-base">About me </h2>
-      <p className="text-sm md:text-base">Software developer who strives to build better products. Also a nerd.</p>
+    <section className="pt-5 md:pt-0 md:px-12 text-sm md:text-base">
+      <h2 className="font-semibold">About me </h2>
+      <p>Hi, I'm a software developer who <b>loves</b> to build and use great products.</p>
+      {/* great = simple */}
+      <p className="pt-4">Albeit my main focus is the engineering side of things (design, implementation, testing), I greatly value honing other necessary skills, especially UI/UX and marketing.</p>
+      {/* <p className="pt-4">I have experience in building both mobile apps and web apps (as a fullstack developer).</p> */}
+      <p className="pt-4">I have other interests in life such as <i>languages, productivity, learning models, psychology, christian theology, chess</i> and more for you to discover.</p>
+
+      <p className="pt-4">If you have some cool projects in which you'd like me to contribute, feel free to contact me.</p>
+
     </section>
 
     <section className="py-5 md:px-12">
