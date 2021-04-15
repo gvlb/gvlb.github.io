@@ -5,6 +5,7 @@ import Project from "../components/Project"
 import dezoneicon from '../images/dezone.svg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithubAlt, faLinkedinIn, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
+import { Link } from "gatsby"
 
 export default function Home() {
   return <div className="py-5 px-5 md:px-10 font-mono font-normal text-gray-800 dark:bg-gray-900 dark:text-gray-300 h-screen">
@@ -16,11 +17,11 @@ export default function Home() {
     <header className="flex flex-col md:px-12">
     <div className="flex flex-row">
       <a className="px-2" href="https://github.com/ovalb">
-        <FontAwesomeIcon icon={faGithubAlt} size="md" /></a>
+        <FontAwesomeIcon icon={faGithubAlt} size="1x" /></a>
       <a className="px-2" href="https://www.linkedin.com/in/giorgiovalbonesi/">
-        <FontAwesomeIcon icon={faLinkedinIn} size="md" /></a>
+        <FontAwesomeIcon icon={faLinkedinIn} size="1x" /></a>
       <a className="px-2" href="https://stackoverflow.com/users/4354167/onval">
-        <FontAwesomeIcon icon={faStackOverflow} size="md" /></a>
+        <FontAwesomeIcon icon={faStackOverflow} size="1x" /></a>
     </div>
       <div className="flex flex-col">
         <h1 className="font-semibold md:text-xl"> Giorgio Valbonesi</h1>
@@ -36,7 +37,7 @@ export default function Home() {
       {/* <p className="pt-4">I have experience in building both mobile apps and web apps (as a fullstack developer).</p> */}
       <p className="pt-4">I have other interests in life such as <i>languages, productivity, learning models, psychology, christian theology, chess</i> and more for you to discover.</p>
 
-      <p className="pt-4">If you have some cool projects in which you'd like me to contribute, feel free to contact me.</p>
+      <p className="pt-4">If you have some cool projects in which you'd like me to contribute, feel free to <Link className="text-blue-600" to="contact"> contact me</Link>.</p>
 
     </section>
 
