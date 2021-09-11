@@ -31,7 +31,7 @@ export default function Home() {
     <main>
     <section className="md:pt-0 md:px-12 text-sm md:text-base">
       <h2 className="font-semibold pt-5">About me </h2>
-      <p>Hi, I'm a software developer who <b>loves</b> to build and use great products.</p>
+      <p>Hi, I'm a software dev who <b>loves</b> to build and use great products.</p>
       {/* great = simple */}
       <p className="pt-4">Albeit my main focus is the engineering side of things (design, implementation, testing), I greatly value honing other necessary skills, especially UI/UX and marketing.</p>
       {/* <p className="pt-4">I have experience in building both mobile apps and web apps (as a fullstack developer).</p> */}
