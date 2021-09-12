@@ -4,3 +4,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600&display=swap');
+
+
+@layer components {
+    .header-btn {
+        @apply mr-2 hover:text-red-500 px-1;
+    }
+}

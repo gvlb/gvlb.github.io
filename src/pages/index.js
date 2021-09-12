@@ -1,53 +1,87 @@
-import React from "react"
-import Helmet from "react-helmet"
-import Project from "../components/Project"
+import * as React from "react"
+import { Link, graphql } from "gatsby"
 
-import dezoneicon from '../images/dezone.svg'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithubAlt, faLinkedinIn, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
-import { Link } from "gatsby"
+import Layout from "../components/layout"
+import Seo from "../components/seo"
 
-export default function Home() {
-  return <div className="py-5 px-5 md:px-10 font-mono font-normal text-gray-800 dark:bg-gray-900 dark:text-gray-300 h-screen">
-    <Helmet title="Giorgio Valbonesi">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />s
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <meta name="description" property="og:description" content="Giorgio Valbonesi's portofolio website" />
-    </Helmet>
-    <header className="flex flex-col md:px-12">
-    <div className="flex flex-row">
-      <a className="px-2" href="https://github.com/ovalb">
-        <FontAwesomeIcon icon={faGithubAlt} size="1x" /></a>
-      <a className="px-2" href="https://www.linkedin.com/in/giorgiovalbonesi/">
-        <FontAwesomeIcon icon={faLinkedinIn} size="1x" /></a>
-      <a className="px-2" href="https://stackoverflow.com/users/4354167/onval">
-        <FontAwesomeIcon icon={faStackOverflow} size="1x" /></a>
-    </div>
-      <div className="flex flex-col">
-        <h1 className="font-semibold md:text-xl"> Giorgio Valbonesi</h1>
-        <h1 className="font-normal text-gray-600 dark:text-gray-400 text-sm md:text-base">ovalb</h1>
-      </div>
-    </header>
-    <main>
-    <section className="md:pt-0 md:px-12 text-sm md:text-base">
-      <h2 className="font-semibold pt-5">About me </h2>
-      <p>Hi, I'm a software dev who <b>loves</b> to build and use great products.</p>
-      {/* great = simple */}
-      <p className="pt-4">Albeit my main focus is the engineering side of things (design, implementation, testing), I greatly value honing other necessary skills, especially UI/UX and marketing.</p>
-      {/* <p className="pt-4">I have experience in building both mobile apps and web apps (as a fullstack developer).</p> */}
-      <p className="pt-4">I have other interests in life such as <i>languages, productivity, learning models, psychology, christian theology, chess</i> and more for you to discover.</p>
+const BlogIndex = ({ data, location }) => {
+  const siteTitle = data.site.siteMetadata?.title || `Title`
+  const posts = data.allMarkdownRemark.nodes
 
-      <p className="pt-4">If you have some cool projects in which you'd like me to contribute, feel free to <Link className="text-blue-600" to="contact"> contact me</Link>.</p>
+  if (posts.length === 0) {
+    return (
+      <Layout location={location}>
+        <Seo title="All posts" />
+        <p>
+          No blog posts found. Add markdown posts to "content/blog" (or the
+          directory you specified for the "gatsby-source-filesystem" plugin in
+          gatsby-config.js).
+        </p>
+      </Layout>
+    )
+  }
 
-    </section>
+  return (
+    <Layout location={location}>
+      
+      <Seo title="All posts" />
+      <ol style={{ listStyle: `none` }}>
+        {posts.map(post => {
+          const title = post.frontmatter.title || post.fields.slug
 
-    <section className="py-5 md:px-12">
-      <h2 className="font-semibold text-sm md:text-base">Notable projects</h2>
-      <Project name="Dezone"
-              desc="all-in-one macOS timer app" 
-              img={dezoneicon}
-              link="https://ovalb.github.io/Dezone" />
-    </section>
-    </main>
-    </div>
+          return (
+            <li key={post.fields.slug}>
+              <article
+                className="post-list-item"
+                itemScope
+                itemType="http://schema.org/Article"
+              >
+                <header>
+                  <h2>
+                    <Link to={post.fields.slug} itemProp="url">
+                      <span itemProp="headline">{title}</span>
+                    </Link>
+                  </h2>
+                  <small>{post.frontmatter.date}</small>
+                </header>
+                <section>
+                  <p
+                    dangerouslySetInnerHTML={{
+                      __html: post.frontmatter.description || post.excerpt,
+                    }}
+                    itemProp="description"
+                  />
+                </section>
+              </article>
+            </li>
+          )
+        })}
+      </ol>
+    </Layout>
+  )
 }
+
+export default BlogIndex
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      nodes {
+        excerpt
+        fields {
+          slug
+        }
+        frontmatter {
+          date(formatString: "MMMM DD, YYYY")
+          title
+          description
+        }
+      }
+    }
+  }
+`
