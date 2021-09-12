@@ -21,7 +21,7 @@ export default function Header() {
             <ol>
                 <li className="inline header-btn"><Link to="/">Blog</Link></li>
                 <li className="inline header-btn"><Link to="/project">Projects</Link></li>
-                <li className="inline header-btn"><Link to="/about">About</Link></li>
+                {/* <li className="inline header-btn"><Link to="/about">About</Link></li> */}
                 <li className="inline header-btn"><Link to="/contact">Contact</Link></li>
             </ol>
         </div>
