@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/altro/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"markdownRemark":{"id":"8d2f0eb5-6aff-5edf-9e3e-944e063ed3da","excerpt":"questo e’ un altro articolo voglio provare alcune cose tipo questo e’ codice  “ questo e’ un heading 4 hehe","html":"<p>questo e’ un altro articolo</p>\n<p>voglio provare alcune cose tipo</p>\n<p>questo e’ codice</p>\n<p><code class=\"language-text\">printf(\"hello world!\")</code></p>\n<p>“</p>\n<h4>questo e’ un heading 4 hehe</h4>\n<ul>\n<li><code class=\"language-text\">na list</code></li>\n<li><code class=\"language-text\">con div tipi di element</code></li>\n</ul>","frontmatter":{"title":"altro","date":"September 13, 2021","description":null}},"previous":{"fields":{"slug":"/trying-and-failing/"},"frontmatter":{"title":"Trying and failing"}},"next":null},"pageContext":{"id":"8d2f0eb5-6aff-5edf-9e3e-944e063ed3da","previousPostId":"b16eb3e7-6c1c-5dab-8821-29c72d4a37e0","nextPostId":null}},
+    "staticQueryHashes": ["2841359383"]}
