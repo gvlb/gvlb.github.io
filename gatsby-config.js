@@ -22,6 +22,7 @@ module.exports = {
     `gatsby-plugin-postcss`, 
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
