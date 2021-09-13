@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/trying-and-failing/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"markdownRemark":{"id":"b16eb3e7-6c1c-5dab-8821-29c72d4a37e0","excerpt":"Let’s try to write an article bro","html":"<p>Let’s try to write an article bro</p>","frontmatter":{"title":"Trying and failing","date":"September 13, 2021","description":null}},"previous":{"fields":{"slug":"/new-beginnings/"},"frontmatter":{"title":"New Beginnings"}},"next":null},"pageContext":{"id":"b16eb3e7-6c1c-5dab-8821-29c72d4a37e0","previousPostId":"bbad7c55-275d-5de1-a6d9-6201b878f0d5","nextPostId":null}},
+    "staticQueryHashes": ["2841359383"]}
