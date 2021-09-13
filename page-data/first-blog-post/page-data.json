@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-blog-post-js",
+    "path": "/first-blog-post/",
+    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"markdownRemark":{"id":"75a42127-f684-57fb-8217-e9c65e987649","excerpt":"This blog post is just an experiment","html":"<p>This blog post is just an experiment</p>","frontmatter":{"title":"First blog post","date":"September 13, 2021","description":null}},"previous":null,"next":null},"pageContext":{"id":"75a42127-f684-57fb-8217-e9c65e987649","previousPostId":null,"nextPostId":null}},
+    "staticQueryHashes": ["2841359383"]}
