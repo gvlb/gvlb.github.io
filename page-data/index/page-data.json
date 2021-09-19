@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"allMarkdownRemark":{"nodes":[{"excerpt":"voglio letteralmente bloggare eheheh questa e’ una prova questo articolo e’ un draft e non e’ visibile","fields":{"slug":"/unpublished/ok-prova/"},"frontmatter":{"date":"September 18, 2021","title":"ok prova","description":null}}]}},"pageContext":{}},
+    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"allMarkdownRemark":{"nodes":[]}},"pageContext":{}},
     "staticQueryHashes": ["2841359383"]}

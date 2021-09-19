@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-blog-post-js",
-    "path": "/unpublished/ok-prova/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"markdownRemark":{"id":"3dbb95f0-88f6-5318-a608-abb7b2e2d2e6","excerpt":"voglio letteralmente bloggare eheheh questa e’ una prova questo articolo e’ un draft e non e’ visibile","html":"<p>voglio letteralmente bloggare eheheh questa e’ una prova</p>\n<p>questo articolo e’ un draft e non e’ visibile</p>","frontmatter":{"title":"ok prova","date":"September 18, 2021","description":null}},"previous":null,"next":null},"pageContext":{"id":"3dbb95f0-88f6-5318-a608-abb7b2e2d2e6","previousPostId":null,"nextPostId":null}},
-    "staticQueryHashes": ["2841359383"]}
