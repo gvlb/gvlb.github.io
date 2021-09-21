@@ -2,6 +2,8 @@ backend:
   name: github
   repo: ovalb/ovalb.github.io
   branch: master
+publish_mode: editorial_workflow
+
 media_folder: static/assets
 public_folder: /assets
 collections:
@@ -10,8 +12,6 @@ collections:
     folder: content/blog
     create: true
     fields:
-      - { name: path, label: Path }
       - { name: date, label: Date, widget: datetime }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
-      - {name:  draft, label: “Save as Draft”, required: false, widget: “boolean”, default: true}
