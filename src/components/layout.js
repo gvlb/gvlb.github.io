@@ -1,12 +1,12 @@
 import * as React from "react"
 import Header from "./header"
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ children }) => {
 
   return (
-    <div className="p-5 mx-auto max-w-5xl">
+    <div className="p-5 mx-auto max-w-6xl">
       <Header />
-      <main className="font-lato">{children}</main>
+      <main className="font-lato mt-10">{children}</main>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}

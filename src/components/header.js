@@ -8,7 +8,7 @@ export default function Header() {
         <header className="flex flex-row justify-between font-mono font-medium">
         <div className="flex flex-row">
             <Link to="/">
-                <h1 className="dark:text-gray-200 header-btn">ovalb</h1>
+                <h1 className="header-btn">ovalb</h1>
             </Link>
             <a className="header-btn" href="https://github.com/ovalb">
             <FontAwesomeIcon icon={faGithubAlt} size="1x" /></a>

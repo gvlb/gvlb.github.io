@@ -6,12 +6,15 @@ import dezoneicon from '../images/dezone.svg'
 export default function Component () {
   return (
     <Layout>
-      <section className="py-5 md:px-12">
-        <h2 className="font-semibold text-base">Projects</h2>
+      <section>
+        <h2 className="font-semibold text-3xl">Projects</h2>
         <Project name="Dezone"
                 desc="all-in-one macOS timer app" 
                 img={dezoneicon}
                 link="https://ovalb.github.io/Dezone" />
+        {/* <Project name="Spaced"
+                desc="spaced repetition web app"
+                link="#" /> */}
       </section>
     </Layout>
   )
