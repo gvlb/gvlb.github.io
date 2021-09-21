@@ -8,7 +8,7 @@ media_folder: static/assets
 public_folder: /assets
 collections:
   - name: blog
-    label: blog
+    label: Blog
     folder: content/blog
     create: true
     fields:
