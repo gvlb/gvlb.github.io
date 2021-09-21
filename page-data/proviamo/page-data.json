@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-templates-blog-post-js",
     "path": "/proviamo/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"markdownRemark":{"id":"3b5ade18-722b-501f-b3c6-84b71efe563e","excerpt":"Proviamo blog post","html":"<p>Proviamo blog post</p>","frontmatter":{"title":"Proviamo","date":"September 21, 2021","description":null}},"previous":{"fields":{"slug":"/hello-world/"},"frontmatter":{"title":"hello world"}},"next":null},"pageContext":{"id":"3b5ade18-722b-501f-b3c6-84b71efe563e","previousPostId":"5e4a5638-90d1-5b1b-ae68-8770ef96bfec","nextPostId":null}},
+    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"markdownRemark":{"id":"3b5ade18-722b-501f-b3c6-84b71efe563e","excerpt":"Proviamo blog post","html":"<p>Proviamo blog post</p>","frontmatter":{"title":"Proviamo","date":"September 21, 2021","description":null}},"previous":null,"next":null},"pageContext":{"id":"3b5ade18-722b-501f-b3c6-84b71efe563e","previousPostId":null,"nextPostId":null}},
     "staticQueryHashes": ["2841359383"]}
