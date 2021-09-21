@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-index-js",
     "path": "/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"allMarkdownRemark":{"nodes":[{"excerpt":"veery interesting blog post I’m not sure about","fields":{"slug":"/hello-world/"},"frontmatter":{"date":"September 21, 2021","title":"hello world","description":null}}]}},"pageContext":{}},
+    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"allMarkdownRemark":{"nodes":[{"excerpt":"Proviamo blog post","fields":{"slug":"/proviamo/"},"frontmatter":{"date":"September 21, 2021","title":"Proviamo","description":null}},{"excerpt":"veery interesting blog post I’m not sure about","fields":{"slug":"/hello-world/"},"frontmatter":{"date":"September 21, 2021","title":"hello world","description":null}}]}},"pageContext":{}},
     "staticQueryHashes": ["2841359383"]}
