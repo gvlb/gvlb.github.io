@@ -23,7 +23,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location}>
       
       <Seo title="All posts" />
-      <ol style={{ listStyle: `none` }}>
+      <ol className="blog" style={{ listStyle: `none` }}>
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
@@ -68,7 +68,11 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: DESC }
+        limit: 1000
+        filter: {frontmatter: {Status: {name: {eq: "published"}}}}
+      ) {
       nodes {
         excerpt
         fields {
