@@ -22,7 +22,15 @@ module.exports = {
     `gatsby-plugin-postcss`, 
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-netlify-cms`,
+    {
+      resolve: `gatsby-source-notion-api`,
+      options: {
+        token: `secret_SYiSYoxk0Krsd7fMB8Cq33iR6iiFqfOJu5kcH7J7e5H`,
+        databaseId: `70ddad1f9c61456ea1eca1cdbf7b364f`,
+        propsToFrontmatter: true,
+        lowerTitleLevel: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -30,13 +38,6 @@ module.exports = {
         trackingIds: [
           "G-XQ1CFXHJLF", // Google Analytics / GA
         ],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/blog/`,
-        name: `blog`,
       },
     },
     {
