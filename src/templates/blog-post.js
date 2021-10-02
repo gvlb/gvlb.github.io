@@ -43,14 +43,14 @@ const BlogPostTemplate = ({ data, location }) => {
         >
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={"/blog/"+previous.fields.slug} replace rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link to={"/blog/"+next.fields.slug} replace rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}

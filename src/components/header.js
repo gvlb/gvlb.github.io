@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithubAlt, faLinkedinIn, faStackOverflow } from '@fortawesome/free-brands-svg-icons'
 import { Link } from "gatsby"
 
-export default function Header() {
+export default function Header({location}) {
     return (
         <header className="flex flex-row justify-between font-mono font-medium">
         <div className="flex flex-row">
@@ -19,10 +19,10 @@ export default function Header() {
         </div>
         <div>
             <ol>
-                <li className="inline header-btn"><Link to="/blog">Blog</Link></li>
-                <li className="inline header-btn"><Link to="/project">Projects</Link></li>
+                <li className={`inline header-btn ${(location && location.pathname.includes("blog") ? "text-red-500" : "")}`}><Link to="/blog">Blog</Link></li>
+                <li className={`inline header-btn ${(location && location.href && location.href.includes("project") ? "text-red-500" : "")}`}><Link to="/project">Projects</Link></li>
                 {/* <li className="inline header-btn"><Link to="/about">About</Link></li> */}
-                <li className="inline header-btn"><Link to="/contact">Contact</Link></li>
+                <li className={`inline header-btn ${(location && location.href && location.href.includes("contact") ? "text-red-500" : "")}`}><Link to="/contact">Contact</Link></li>
             </ol>
         </div>
       </header>

@@ -3,9 +3,9 @@ import axios from "axios"
 import Layout from "../components/layout"
 // create a form connected to some FaaS or even like Zapier or something
 // https://medium.com/datafire-io/simple-backends-four-ways-to-implement-a-contact-us-form-on-a-static-website-10fc430984a4
-export default function Contact () {
+export default function Contact ({location}) {
   return (
-    <Layout>
+    <Layout location={location}>
     <form>
       <label>
         Email<br />

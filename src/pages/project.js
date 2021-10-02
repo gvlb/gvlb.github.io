@@ -3,9 +3,9 @@ import Layout from "../components/layout"
 import Project from "../components/Project"
 import dezoneicon from '../images/dezone.svg'
 
-export default function Component () {
+export default function Projects({ location }) {
   return (
-    <Layout>
+    <Layout location={location}>
       <section>
         <h2 className="font-semibold text-3xl">Projects</h2>
         <Project name="Dezone"
