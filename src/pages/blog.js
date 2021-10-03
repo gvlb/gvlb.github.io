@@ -35,7 +35,7 @@ export default function Blog({data, location}) {
 
     return (
         <Layout location={location}>
-                <div>
+                <div className="font-mono">
                 { tags.map((tag, i) =>
                     <span onClick={() => {
                         setFilter(tag)
