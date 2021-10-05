@@ -64,24 +64,24 @@
   
   /* HTML elements */
   
-  *,
+  /* *,
   :after,
   :before {
     box-sizing: border-box;
-  }
+  } */
   
-  html {
+  /* html {
     line-height: var(--lineHeight-normal);
     font-size: var(--fontSize-root);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-  }
+  } */
   
-  body {
+  /* body {
     font-family: var(--font-body);
     font-size: var(--fontSize-1);
     color: var(--color-text);
-  }
+  } */
   
   footer {
     padding: var(--spacing-6) var(--spacing-0);
@@ -95,7 +95,7 @@
   
   /* Heading */
   
-  article h1,
+  /* article h1,
   h2,
   h3,
   h4,
@@ -115,9 +115,9 @@
   h6 {
     font-weight: var(--fontWeight-bold);
     color: var(--color-heading);
-  }
+  } */
   
-  article h1 {
+  /* article h1 {
     font-weight: var(--fontWeight-black);
     font-size: var(--fontSize-6);
     color: var(--color-heading-black);
@@ -141,7 +141,7 @@
   
   article h6 {
     font-size: var(--fontSize-1);
-  }
+  } */
   
   article h1 > a,
   h2 > a,
@@ -192,9 +192,9 @@
     margin-bottom: calc(var(--spacing-8) / 2);
   }
   
-  li > p {
+  /* li > p {
     margin-bottom: calc(var(--spacing-8) / 2);
-  }
+  } */
   
   li *:last-child {
     margin-bottom: var(--spacing-0);
@@ -237,20 +237,9 @@
   }
   
   /* Link */
-  h2 > a {
+  /* h2 > a {
     color: #3d3d3d;
-  }e
-
-  section a {
-    color: var(--color-primary);
-    text-decoration: underline;
-  }
-  
-  section a:hover,
-  a:focus {
-    color: var(--color-primary);
-    text-decoration: none;
-  }
+  } */
   
   /* Custom classes */
   
