@@ -15,11 +15,11 @@
     }
 
     h2 > a > span {
-        @apply text-gray-800 dark:text-gray-200
+        @apply text-gray-800 dark:text-gray-200 hover:text-red-500
     }
 
     header > small {
-        @apply text-gray-600 dark:text-gray-400
+        @apply text-gray-500 -mb-2
     }
 
     article h1 {
@@ -41,11 +41,20 @@
     header > p {
         @apply text-gray-500 dark:text-gray-400
     }
+
+    form > label {
+        @apply font-bold mb-2
+    }
+
     
 }
 
 @layer components {
     .header-btn {
         @apply mr-2 hover:text-red-500 px-1;
+    }
+
+    .input-field {
+        @apply border m-1 p-1 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-white w-full
     }
 }

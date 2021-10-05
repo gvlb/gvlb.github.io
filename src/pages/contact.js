@@ -9,17 +9,17 @@ export default function Contact ({location}) {
     <form>
       <label>
         Email<br />
-        <input id="email" className="border m-1 p-1 rounded-md w-3/6" type="email" name="subject" />
+        <input id="email" className="input-field" type="email" name="subject" />
       </label>
       <br />
       <label>
         Subject<br />
-        <input id="subject" className="border m-1 p-1 rounded-md w-3/6" type="text" name="subject" />
+        <input id="subject" className="input-field" type="text" name="subject" />
       </label>
       <br />
       <label>
         Message<br />
-        <textarea id="message" className="border m-1 p-1 rounded-md w-3/6 h-2/3" name="message" />
+        <textarea id="message" className="input-field" name="message" />
       </label>
       <br />
       <button className="border m-1 p-1 rounded-md" type="submit" onClick={()=> sendMessage()} >Send</button>

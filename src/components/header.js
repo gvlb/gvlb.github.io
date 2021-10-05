@@ -20,7 +20,7 @@ export default function Header({location}) {
         <div>
             <ol>
                 <li className={`inline header-btn ${(location && location.pathname.includes("blog") ? "text-red-500" : "")}`}><Link to="/blog">Blog</Link></li>
-                <li className={`inline header-btn ${(location && location.href && location.href.includes("project") ? "text-red-500" : "")}`}><Link to="/project">Projects</Link></li>
+                {/* <li className={`inline header-btn ${(location && location.href && location.href.includes("project") ? "text-red-500" : "")}`}><Link to="/project">Projects</Link></li> */}
                 {/* <li className="inline header-btn"><Link to="/about">About</Link></li> */}
                 <li className={`inline header-btn ${(location && location.href && location.href.includes("contact") ? "text-red-500" : "")}`}><Link to="/contact">Contact</Link></li>
             </ol>
