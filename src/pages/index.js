@@ -24,6 +24,8 @@ const BlogIndex = ({ data, location }) => {
       
       <Seo title="All posts" />
       <ol className="blog" >
+        <span className="font-mono text-gray-500">latest posts</span>
+
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
@@ -40,7 +42,7 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{(post.frontmatter.Date !== null) ? post.frontmatter.Date.start : "" }</small>
+                  <small>{ post.frontmatter.Date?.start || " " }</small>
                 </header>
                 <section>
                   <p
@@ -69,8 +71,8 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 1000
+        sort: { fields: [frontmatter___Date___start], order: DESC }
+        limit: 3
         filter: {frontmatter: {Status: {name: {eq: "published"}}}}
       ) {
       nodes {
@@ -83,7 +85,7 @@ export const pageQuery = graphql`
             start(formatString: "MMMM DD, YYYY")
           }
           title
-          description
+          Description
         }
       }
     }

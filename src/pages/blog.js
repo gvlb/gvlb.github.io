@@ -86,7 +86,7 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
+        sort: { fields: [frontmatter___Date___start], order: DESC }
         limit: 1000
         filter: {frontmatter: {Status: {name: {eq: "published"}}}}
       ) {
