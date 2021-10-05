@@ -165,7 +165,7 @@
   
   article ul,
   ol {
-    margin-left: var(--spacing-5);
+    /* margin-left: var(--spacing-5); */
     margin-right: var(--spacing-0);
     padding: var(--spacing-0);
     margin-bottom: var(--spacing-8);
