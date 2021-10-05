@@ -59,7 +59,7 @@ export default function Blog({data, location}) {
                             <span itemProp="headline">{title}</span>
                             </Link>
                         </h2>
-                        <small>{post.frontmatter.date}</small>
+                        <small>{post.frontmatter.Date.start || "" }</small>
                         </header>
                         <section>
                         <p
@@ -96,7 +96,9 @@ export const query = graphql`
           slug
         }
         frontmatter {
-          date(formatString: "MMMM DD, YYYY")
+            Date {
+                start(formatString: "MMMM DD, YYYY")
+            }
           title
           description
           Tags {
