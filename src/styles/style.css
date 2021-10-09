@@ -329,4 +329,6 @@
       list-style-position: inside;
     }
   }
-  
+
+  @import "./prismjs/prism-duotone-sea.css" (prefers-color-scheme: dark);
+  @import "./prismjs/prism-duotone-light.css" (prefers-color-scheme: light);

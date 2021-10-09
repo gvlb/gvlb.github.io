@@ -10,8 +10,8 @@
         @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 font-lato
     }
 
-    article h1, h2, h3, h4, h5, h6 {
-        @apply font-extrabold font-lato mb-2 dark:text-gray-200
+    section {
+        @apply text-lg
     }
 
     h2 > a > span {
@@ -21,17 +21,25 @@
     header > small {
         @apply text-gray-500 -mb-2
     }
+    
+    article h1, h2, h3, h4, h5, h6 {
+        @apply font-extrabold font-montserrat mb-4 dark:text-gray-200
+    }
 
     article h1 {
-        @apply text-3xl font-black
+        @apply text-4xl font-black
     }
 
     article h2 {
-        @apply text-2xl
+        @apply text-4xl
     }
 
     article h3 {
-        @apply text-xl
+        @apply text-3xl
+    }
+
+    article h4 {
+        @apply text-2xl
     }
 
     section a {

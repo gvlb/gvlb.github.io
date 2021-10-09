@@ -5,7 +5,9 @@ module.exports = {
     extend: {
       fontFamily: {
         mono: ["Roboto Mono", "monospace"],
+        montserrat: ["Montserrat", "Roboto", "sans-serif"],
         lato: ["Lato", "sans-serif"],
+        merri: ["Merriweather", "Georgia", "Times New Roman", "serif"],
       },
     },
   },
