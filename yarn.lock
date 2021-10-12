@@ -1681,10 +1681,10 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
-"@ovalb/gatsby-source-notion-api@^1.0.1":
-  "integrity" "sha512-pYzYQNMHb7D1us670bt6Wfs28mzmsiWCsjPIHi5lbpNP+PlZUkF9ZiWl/HnnLCNTVzPzHjxI5nd/rlcBbdLMYQ=="
-  "resolved" "https://registry.npmjs.org/@ovalb/gatsby-source-notion-api/-/gatsby-source-notion-api-1.0.1.tgz"
-  "version" "1.0.1"
+"@ovalb/gatsby-source-notion-api@^1.0.2":
+  "integrity" "sha512-/Q5yPAyEnt8ybQeBVskY+hFAFe8gM1n8DS9mVRSuM2f7yDIRw8NPhM0MV021yvBHBUchJLk88h/NJE2v1QrBeQ=="
+  "resolved" "https://registry.npmjs.org/@ovalb/gatsby-source-notion-api/-/gatsby-source-notion-api-1.0.2.tgz"
+  "version" "1.0.2"
   dependencies:
     "node-fetch" "^2.6.1"
     "or-pipets" "^1.0.1"

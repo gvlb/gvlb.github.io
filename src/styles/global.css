@@ -7,7 +7,7 @@
 
 @layer base {
     body {
-        @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 font-lato
+        @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 font-sans
     }
 
     section {
@@ -19,7 +19,7 @@
     }
 
     header > small {
-        @apply text-gray-500 -mb-2
+        @apply text-gray-500 -mb-2 text-base font-merri
     }
     
     article h1, h2, h3, h4, h5, h6 {
@@ -47,12 +47,16 @@
     }
 
     header > p {
-        @apply text-gray-500 dark:text-gray-400
+        @apply text-gray-600 font-light dark:text-gray-400 font-merri text-lg
     }
 
     form > label {
         @apply font-bold mb-2
     }
+
+    /* header > .post_date {
+        @apply text-gray-500 dark:text-gray-400 font-merri text-lg
+    } */
 
     
 }

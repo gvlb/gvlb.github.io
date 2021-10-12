@@ -23,7 +23,7 @@ const BlogPostTemplate = ({ data, location }) => {
       >
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.Date.start || ""}</p>
+          <p className="post_date">{post.frontmatter.Date.start || ""}</p>
         </header>
         <section
           dangerouslySetInnerHTML={{ __html: post.html }}
