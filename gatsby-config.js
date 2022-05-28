@@ -23,7 +23,7 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `@ovalb/gatsby-source-notion-api`,
+      resolve: `gatsby-source-notion-api`,
       options: {
         token: `secret_SYiSYoxk0Krsd7fMB8Cq33iR6iiFqfOJu5kcH7J7e5H`,
         databaseId: `70ddad1f9c61456ea1eca1cdbf7b364f`,

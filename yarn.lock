@@ -1681,15 +1681,6 @@
     "@nodelib/fs.scandir" "2.1.5"
     "fastq" "^1.6.0"
 
-"@ovalb/gatsby-source-notion-api@^1.0.2":
-  "integrity" "sha512-/Q5yPAyEnt8ybQeBVskY+hFAFe8gM1n8DS9mVRSuM2f7yDIRw8NPhM0MV021yvBHBUchJLk88h/NJE2v1QrBeQ=="
-  "resolved" "https://registry.npmjs.org/@ovalb/gatsby-source-notion-api/-/gatsby-source-notion-api-1.0.2.tgz"
-  "version" "1.0.2"
-  dependencies:
-    "node-fetch" "^2.6.1"
-    "or-pipets" "^1.0.1"
-    "yaml" "^1.10.2"
-
 "@pmmmwh/react-refresh-webpack-plugin@^0.4.3":
   "integrity" "sha512-br5Qwvh8D2OQqSXpd1g/xqXKnK0r+Jz6qVKBbWmpUcrbGOxUrf39V5oZ1876084CGn18uMdR5uvPqBv9UqtBjQ=="
   "resolved" "https://registry.npmjs.org/@pmmmwh/react-refresh-webpack-plugin/-/react-refresh-webpack-plugin-0.4.3.tgz"
@@ -5791,6 +5782,15 @@
     "progress" "^2.0.3"
     "valid-url" "^1.0.9"
     "xstate" "^4.14.0"
+
+"gatsby-source-notion-api@^0.11.0":
+  "integrity" "sha512-u+Bb+/4A1zKNCVxc6htxK17FhkpDEdO8MOiVl0hPz2nHVDxh64TTDu6uRC1z5lDI6OnR5eEXcNiOA+fUdhj3aA=="
+  "resolved" "https://registry.npmjs.org/gatsby-source-notion-api/-/gatsby-source-notion-api-0.11.0.tgz"
+  "version" "0.11.0"
+  dependencies:
+    "node-fetch" "^2.6.1"
+    "or-pipets" "^1.0.1"
+    "yaml" "^1.10.2"
 
 "gatsby-telemetry@^2.13.0":
   "integrity" "sha512-PN9kKbZd0i2QkoVvHyCa3VjuRVIvBwjXTyZHwL+se5yrbYufZQXoyMiMMXFV48FvxMgE53ON1U2vtzeRvE8U2w=="
