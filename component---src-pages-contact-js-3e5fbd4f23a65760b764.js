@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_ovalb=self.webpackChunkgatsby_ovalb||[]).push([[501],{262:function(t,e,n){n.r(e),n.d(e,{default:function(){return a}});var u=n(7294);function a(){return u.createElement("h1",null,"Contact me!")}}}]);
-//# sourceMappingURL=component---src-pages-contact-js-3e5fbd4f23a65760b764.js.map
