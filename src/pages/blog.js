@@ -4,25 +4,9 @@ import Seo from "../components/seo"
 import {Link, graphql} from "gatsby"
 
 export default function Blog({data, location}) {
-    const [filter, setFilter] = useState("all")
-
     const posts = data.allMarkdownRemark.nodes
-        .filter(post => {
-            if (filter === "all") return true
-            console.log("name is: ", post.frontmatter.Tags.name)
-            console.log("filter is: ", filter)
-            return post.frontmatter.Tags[0].name === filter
-        })
 
-    const t = new Set (
-        data.allNotion.nodes
-            .filter(node => node.properties.Tags.value.length !== 0)
-            .map(node => node.properties.Tags.value[0].name)
-    )
-
-    const tags = [...t.add('all')]
-
-    if (tags.length === 0) {
+    if (posts.length === 0) {
         return (
           <Layout location={location}>
             <Seo title="All posts" />
@@ -35,13 +19,6 @@ export default function Blog({data, location}) {
 
     return (
         <Layout location={location}>
-                <div className="font-mono">
-                { tags.map((tag, i) =>
-                    <span onClick={() => {
-                        setFilter(tag)
-                    }} className={`mr-3 font-semibold ${(filter === tag) ? "text-red-500" : ""} hover:text-red-500`} key={i}>{tag}</span>
-                )}
-                </div>
                 <ol className="blog" style={{ listStyle: `none` }}>
                 {posts.map(post => {
                 const title = post.frontmatter.title || post.fields.slug
@@ -59,7 +36,7 @@ export default function Blog({data, location}) {
                             <span itemProp="headline">{title}</span>
                             </Link>
                         </h2>
-                        <small>{post.frontmatter.Date.start || "" }</small>
+                        <small>{post.frontmatter.date}</small>
                         </header>
                         <section>
                         <p
@@ -86,9 +63,8 @@ export const query = graphql`
       }
     }
     allMarkdownRemark(
-        sort: { fields: [frontmatter___Date___start], order: DESC }
+        sort: { fields: [frontmatter___date], order: DESC }
         limit: 1000
-        filter: {frontmatter: {Status: {name: {eq: "published"}}}}
       ) {
       nodes {
         excerpt
@@ -96,27 +72,11 @@ export const query = graphql`
           slug
         }
         frontmatter {
-            Date {
-                start(formatString: "MMMM DD, YYYY")
-            }
+          date 
           title
           description
-          Tags {
-              name
-          }
         }
       }
-    }
-    allNotion {
-        nodes {
-            properties {
-                Tags {
-                    value {
-                        name
-                    }
-                }
-            }
-        }
     }
   }
 `

@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
   if (posts.length === 0) {
@@ -42,7 +42,7 @@ const BlogIndex = ({ data, location }) => {
                       <span itemProp="headline">{title}</span>
                     </Link>
                   </h2>
-                  <small>{ post.frontmatter.Date?.start || " " }</small>
+                  <small>{ post.frontmatter.date}</small>
                 </header>
                 <section>
                   <p
@@ -71,9 +71,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-        sort: { fields: [frontmatter___Date___start], order: DESC }
         limit: 3
-        filter: {frontmatter: {Status: {name: {eq: "published"}}}}
       ) {
       nodes {
         excerpt
@@ -81,11 +79,9 @@ export const pageQuery = graphql`
           slug
         }
         frontmatter {
-          Date {
-            start(formatString: "MMMM DD, YYYY")
-          }
+          date
           title
-          Description
+          description 
         }
       }
     }

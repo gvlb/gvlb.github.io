@@ -19,18 +19,9 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-postcss`, 
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-notion-api`,
-      options: {
-        token: `secret_SYiSYoxk0Krsd7fMB8Cq33iR6iiFqfOJu5kcH7J7e5H`,
-        databaseId: `70ddad1f9c61456ea1eca1cdbf7b364f`,
-        propsToFrontmatter: true,
-        lowerTitleLevel: true,
-      },
-    },
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
@@ -71,12 +62,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-google-analytics`,
-    //   options: {
-    //     trackingId: `ADD YOUR TRACKING ID HERE`,
-    //   },
-    // },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
@@ -95,15 +80,15 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
+              return allMarkdownRemark.nodes.map((node) => {
                 return Object.assign({}, node.frontmatter, {
                   description: node.excerpt,
                   date: node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + node.fields.slug,
                   guid: site.siteMetadata.siteUrl + node.fields.slug,
                   custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
+                });
+              });
             },
             query: `
               {
@@ -142,4 +127,4 @@ module.exports = {
       },
     },
   ],
-}
+};

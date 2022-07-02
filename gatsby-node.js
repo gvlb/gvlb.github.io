@@ -13,7 +13,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       {
         allMarkdownRemark(
           limit: 1000
-          filter: {frontmatter: {Status: {name: {eq: "published"}}}}
         ) {
           nodes {
             id
