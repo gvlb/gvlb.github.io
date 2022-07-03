@@ -5,58 +5,13 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const BlogIndex = ({ data, location }) => {
-  // const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
-
-  if (posts.length === 0) {
-    return (
-      <Layout location={location}>
-        <Seo title="All posts" />
-        <p>
-          No blog posts found. :-(
-        </p>
-      </Layout>
-    )
-  }
 
   return (
     <Layout location={location}>
       
       <Seo title="All posts" />
-      <ol className="blog" >
-        <span className="font-mono text-gray-500">latest posts</span>
-
-        {posts.map(post => {
-          const title = post.frontmatter.title || post.fields.slug
-
-          return (
-            <li key={post.fields.slug}>
-              <article
-                className="post-list-item"
-                itemScope
-                itemType="http://schema.org/Article"
-              >
-                <header>
-                  <h2>
-                    <Link to={"/blog/" + post.fields.slug} itemProp="url">
-                      <span itemProp="headline">{title}</span>
-                    </Link>
-                  </h2>
-                  <small>{ post.frontmatter.date}</small>
-                </header>
-                <section>
-                  <p
-                    dangerouslySetInnerHTML={{
-                      __html: post.frontmatter.Description || post.excerpt,
-                    }}
-                    itemProp="description"
-                  />
-                </section>
-              </article>
-            </li>
-          )
-        })}
-      </ol>
+      <p> Hi, I will add here projects and thoughts I don't completely hate.<br />So not much. </p>
+      
     </Layout>
   )
 }
