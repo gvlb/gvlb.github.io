@@ -1,1 +1,54 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby My stuff]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 02 Jul 2022 20:45:23 GMT</lastBuildDate></channel></rss>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby My stuff]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsbystarterblogsource.gatsbyjs.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 Jul 2022 12:37:08 GMT</lastBuildDate><item><title><![CDATA[Inductive learning]]></title><description><![CDATA[The term inductive learning comes from inductive reasoning.
+It identifies the process of drawing conclusions by performing a body of…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.ioinductive-learning</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.ioinductive-learning</guid><pubDate>Thu, 07 Apr 2022 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;The term inductive learning comes from inductive reasoning.
+It identifies the process of drawing conclusions by performing a body of observations.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3&gt;Instances and abstractions&lt;/h3&gt;
+&lt;p&gt;We use abstractions to describe concepts and communicate with each other.
+Each abstraction contains a set of instances, the things they’re abstracting from.&lt;br /&gt;
+&lt;em&gt;e.g. ‘the American Bulldog I saw yesterday’ is a single instance of ‘dog’&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Abstractions are created by extracting the common features, behaviors and uses from their instances.&lt;br /&gt;
+&lt;em&gt;e.g. Dogs have four legs, a good sense of smell, bark and are man’s best friend&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Understanding abstractions&lt;/h3&gt;
+&lt;p&gt;The common way concepts (abstractions) are taught in schools is by giving a definition.
+Usually definitions make sense when you already understand the concept:&lt;br /&gt;
+&lt;em&gt;e.g. logarithm := the exponent or power to which a base must be raised to yield a given number&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Humans infer abstractions inductively, by identifying and interacting with concrete instances.&lt;br /&gt;
+&lt;em&gt;e.g. kid sees, touches, plays with a lot of dogs -&gt; kid knows what a dog is&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The more ways you can visualize, manipulate, apply a concept, the better you understand it.
+(that’s kind of the definition of “understanding”, isn’t it)&lt;/p&gt;
+&lt;h3&gt;In practice&lt;/h3&gt;
+&lt;p&gt;I’ve found that among all of the concepts I’ve had trouble to fully grasp, I didn’t work on identifying their instances and manipulating their properties.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Tip:&lt;/strong&gt; when not understanding a concept, ask the following:
+What are its instances? What do they look like? What do they do? What use do they have?&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;When there are no concrete instances of a concept, the next best thing is to create associations with abstraction you do understand.
+e.g. we generalize the concept of dimensions to make sense of the 4th or higher dimensions.&lt;/p&gt;
+&lt;p&gt;Note that this doesn’t give us real “understanding” of the 4th dimension, but it lets us reason and make computations with it.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;(write something)&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;to add maybe:
+&lt;strong&gt;Association&lt;/strong&gt;
+Another way to help us make sense of non-trivial abstractions is by associating them with concepts we’re already familiar with.&lt;/p&gt;
+&lt;p&gt;the more accurate your mental representation is, the easier you understand and make sense of things&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Building concept]]></title><description><![CDATA[Definition To build - can have many different meanings (a relationship, a boat, a physique). Here I’m defining it as “producing something…]]></description><link>https://gatsbystarterblogsource.gatsbyjs.iobuilding-concept</link><guid isPermaLink="false">https://gatsbystarterblogsource.gatsbyjs.iobuilding-concept</guid><pubDate>Mon, 07 Mar 2022 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Definition&lt;/h1&gt;
+&lt;p&gt;To build - can have many different meanings (a relationship, a boat, a physique).&lt;/p&gt;
+&lt;p&gt;Here I’m defining it as “producing something that will be experienced by someone (or something) else”.&lt;/p&gt;
+&lt;h1&gt;Partially known system&lt;/h1&gt;
+&lt;p&gt;When you don’t have a full idea of what or how you’re building something:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;start small, expand later.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This principle is also used in [[problem solving]].&lt;/p&gt;
+&lt;h1&gt;Iterative building&lt;/h1&gt;
+&lt;p&gt;Some people have perfected and mastered the process of drawing a realistic portrait. (see speed drawing on youtube)&lt;/p&gt;
+&lt;p&gt;If we apply those principles to any kind of building we conclude that building should be:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;top-down - make sure you’re doing end-to-end, akin to [[learning_framework|learning]].&lt;/li&gt;
+&lt;li&gt;iterative&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Building for humans&lt;/h1&gt;
+&lt;p&gt;When the recipient is [[human values|human]], focus on reducing their [[cognitive load]].&lt;/p&gt;
+&lt;h1&gt;Clean up periodically&lt;/h1&gt;
+&lt;p&gt;Some systems have a potentially infinite building process (e.g. software, political system, mental ideas).&lt;/p&gt;
+&lt;p&gt;In such cases, &lt;strong&gt;overhead&lt;/strong&gt; will happen.
+To reduce such complexity it’s important to “refactor” your system periodically.&lt;/p&gt;</content:encoded></item></channel></rss>

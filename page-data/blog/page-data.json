@@ -1,5 +1,5 @@
 {
     "componentChunkName": "component---src-pages-blog-js",
     "path": "/blog/",
-    "result": {"data":{"site":{"siteMetadata":{"title":"Gatsby My stuff"}},"allMarkdownRemark":{"nodes":[]}},"pageContext":{}},
+    "result": {"data":{"allMarkdownRemark":{"nodes":[{"excerpt":"The term inductive learning comes from inductive reasoning.\nIt identifies the process of drawing conclusions by performing a body of…","fields":{"slug":"inductive-learning"},"frontmatter":{"date":"04-07-2022","title":"Inductive learning","description":"how to understand concepts"}},{"excerpt":"Definition To build - can have many different meanings (a relationship, a boat, a physique). Here I’m defining it as “producing something…","fields":{"slug":"building-concept"},"frontmatter":{"date":"03-07-2022","title":"Building concept","description":"build stuff"}}]}},"pageContext":{}},
     "staticQueryHashes": ["2841359383"]}
