@@ -10,7 +10,8 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location}>
       
       <Seo title="All posts" />
-      <p> Hi, I will add here projects and thoughts I don't completely hate.<br />So not much. </p>
+      <p> Hi, this is my space for personal projects and thoughts I don't completely hate.<br />
+      So, not much. </p>
       
     </Layout>
   )

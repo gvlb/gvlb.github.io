@@ -7,63 +7,76 @@
 
 @layer base {
     body {
-        @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 font-sans
+        @apply bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300
     }
 
-    section {
-        @apply text-lg
+    .post-list-item {
+        @apply mb-5 font-montserrat
     }
 
-    h2 > a > span {
-        @apply text-gray-800 dark:text-gray-200 hover:text-red-500
+    .post-list-item > small {
+        @apply text-gray-500 text-sm
     }
 
-    header > small {
-        @apply text-gray-500 -mb-2 text-base font-merri
+    .post-list-item h2 {
+        @apply m-0
+    }
+    .post-list-item > h2 > a > span {
+        @apply text-black dark:text-gray-200 hover:underline
+    }
+
+    .post-list-item > p {
+        @apply text-sm text-gray-900 m-0 p-0
+    }
+
+    .post_date {
+        @apply text-sm text-gray-500 mb-10
     }
     
-    article h1, h2, h3, h4, h5, h6 {
-        @apply font-extrabold font-montserrat mb-4 dark:text-gray-200
+    .blog-post h1, h2, h3, h4, h5, h6 {
+        @apply mb-2 mt-4 dark:text-gray-200
     }
 
-    article h1 {
-        @apply text-4xl font-black
+    .blog-post h1 {
+        @apply text-4xl font-medium
     }
 
-    article h2 {
-        @apply text-4xl
+    .blog-post h2 { 
+        @apply text-2xl font-medium
     }
 
-    article h3 {
-        @apply text-3xl
+    .blog-post h3 {
+        @apply text-xl text-black
     }
 
-    article h4 {
-        @apply text-2xl
+    .blog-post h4 {
+        @apply text-black
     }
 
-    section a {
-        @apply text-red-500 dark:text-red-500 underline hover:no-underline
+    .blog-post a {
+        @apply text-pink-800 underline hover:no-underline
     }
 
-    header > p {
-        @apply text-gray-600 font-light dark:text-gray-400 font-merri text-lg
+    .blog-post > section {
+        @apply text-gray-900 dark:text-gray-400 text-base
+    }
+
+    .blog-post em {
+        @apply text-gray-600
+    }
+
+    .blog-post > section > p {
+        @apply mb-4
     }
 
     form > label {
         @apply font-bold mb-2
     }
-
-    /* header > .post_date {
-        @apply text-gray-500 dark:text-gray-400 font-merri text-lg
-    } */
-
-    
 }
 
 @layer components {
     .header-btn {
-        @apply mr-2 hover:text-red-500 px-1;
+        @apply mr-2 hover:underline px-1;
     }
 
     .input-field {
