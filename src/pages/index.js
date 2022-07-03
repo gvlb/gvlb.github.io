@@ -1,10 +1,9 @@
 import * as React from "react"
-import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 
-const BlogIndex = ({ data, location }) => {
+const BlogIndex = ({ location }) => {
 
   return (
     <Layout location={location}>
@@ -18,28 +17,3 @@ const BlogIndex = ({ data, location }) => {
 }
 
 export default BlogIndex
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-        limit: 3
-      ) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date
-          title
-          description 
-        }
-      }
-    }
-  }
-`

@@ -76,7 +76,7 @@
 
 @layer components {
     .header-btn {
-        @apply mr-2 hover:underline px-1;
+        @apply m-1 hover:underline p-2 text-lg
     }
 
     .input-field {

@@ -9,7 +9,7 @@ It identifies the process of drawing conclusions by performing a body of observa
 
 ---
 
-### Instances and abstractions
+## Instances and abstractions
 We use abstractions to describe concepts and communicate with each other.
 Each abstraction contains a set of instances, the things they're abstracting from.<br />
 *e.g. 'the American Bulldog I saw yesterday' is a single instance of 'dog'*
