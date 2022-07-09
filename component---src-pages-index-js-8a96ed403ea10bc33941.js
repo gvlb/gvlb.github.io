@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkovalb_github_io_old=self.webpackChunkovalb_github_io_old||[]).push([[678],{6558:function(e,t,l){l.r(t);var o=l(7294),n=l(8587),a=l(262);t.default=function(e){var t=e.location;return o.createElement(n.Z,{location:t},o.createElement(a.Z,{title:"All posts"}),o.createElement("p",null," Hi, this is my space for personal projects and thoughts I don't completely hate.",o.createElement("br",null),"So, not much. "))}}}]);
+//# sourceMappingURL=component---src-pages-index-js-8a96ed403ea10bc33941.js.map

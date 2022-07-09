@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkovalb_github_io_old=self.webpackChunkovalb_github_io_old||[]).push([[883],{9616:function(u,n,t){t.r(n),t.d(n,{default:function(){return o}});var e=t(7294);function o(){return e.createElement("h1",null,"404 - Not found")}}}]);
-//# sourceMappingURL=component---src-pages-404-js-2baaef464dcde21b1d87.js.map
