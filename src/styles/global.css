@@ -30,11 +30,11 @@
     }
 
     .post_date {
-        @apply text-sm text-gray-500 mb-10
+        @apply text-sm text-gray-500 dark:text-gray-400 mb-10
     }
     
     .blog-post h1, h2, h3, h4, h5, h6 {
-        @apply mb-2 mt-4 dark:text-gray-200
+        @apply mb-2 mt-4 dark:text-white
     }
 
     .blog-post h1 {
@@ -58,11 +58,11 @@
     }
 
     .blog-post > section {
-        @apply text-gray-900 dark:text-gray-400 text-base
+        @apply text-gray-900 dark:text-gray-300 text-base
     }
 
     .blog-post em {
-        @apply text-gray-600
+        @apply text-gray-500 dark:text-gray-400
     }
 
     .blog-post > section > p {
@@ -76,7 +76,7 @@
 
 @layer components {
     .header-btn {
-        @apply m-1 hover:underline p-2 text-lg
+        @apply m-1 hover:underline p-1 text-base
     }
 
     .input-field {
